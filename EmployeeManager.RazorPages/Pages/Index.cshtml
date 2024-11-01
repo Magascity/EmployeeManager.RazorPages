@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container-fluid">
+    <div class="row vh-100">
+        <!-- Left column for the image -->
+        <div class="col-md-6 p-0">
+            <img src="~/images/2.png" alt="Side Image" class="img-fluid h-100 w-100 object-cover">
+        </div>
+
+        <!-- Right column for text content -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">
+            <div class="text-center p-4">
+                <h1 class="display-4">Welcome to EmployeeManager</h1>
+                <p class="lead">Effortlessly manage your employees with our robust and intuitive system.</p>
+                <a href="#" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Ensure the image fills its column without any space */
+    .object-cover {
+        object-fit: cover;
+    }
+
+    /* Ensure both columns fill the full viewport height */
+    .vh-100 {
+        height: 100vh;
+    }
+
+    /* Remove padding and margin to make sure content fills the screen edge-to-edge */
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+</style>
